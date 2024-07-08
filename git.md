@@ -266,3 +266,7 @@ What does pushing "nothing" to a remote branch do? It deletes it!
 
 There, we successfully deleted the foo branch on remote by pushing the concept of "nothing" to it.
 
+# Resources
+1. https://learngitbranching.js.org
+2. https://missing.csail.mit.edu
+
