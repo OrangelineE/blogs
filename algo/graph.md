@@ -209,26 +209,27 @@ while(1) {
 怎么找`未收录顶点中dist最小者`呢？
 1. 直接扫描所有未收录顶点——O(|V|)
 
-最终时间复杂度是 O(V^2 + |E|)
+    最终时间复杂度是 O(V^2 + |E|)
+
 2. 可用`最小堆`!
 + 将dist存在最小堆里——O(log|V|)
 + 更新dist[W]的值——O(log|V|)
 
-最终时间复杂度是T = O(|V|log|V| + |E|log|V|) = O(|E|log|V|)
+    最终时间复杂度是T = O(|V|log|V| + |E|log|V|) = O(|E|log|V|)
 
 ### Multi-Source
 1. 可以将单源最短路重复｜V｜遍, T = O(|V|^3 + |E| * |V|)-对稀疏图效果好
-2. Floyd算法， T = O(|V^3|)-对稠密图效果好
-    因为是稠密图，所以用邻接矩阵
+2. Floyd算法， T = O(|V^3|)-对稠密图效果好 (用邻接矩阵)
 
 Definition:
 
-Floyd-Warshall is an algorithm for finding the shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles).
+`Floyd-Warshall` is an algorithm for finding the shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles).
 
 Use Cases:
 
-Finding the shortest paths between all pairs of vertices in a graph.
-Used in routing algorithms, network analysis, and various other applications in computer science.
++ Finding the shortest paths between all pairs of vertices in a graph.
+
++ Used in routing algorithms, network analysis, and various other applications in computer science.
 
 Steps:
 
