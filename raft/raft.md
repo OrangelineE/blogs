@@ -4,4 +4,4 @@
 + Safety
 
 # Replicated State Machine
-Same Initial state + same input = same End state
+Same Initial state + same input = same End state.
